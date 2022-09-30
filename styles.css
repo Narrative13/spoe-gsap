@@ -1,0 +1,132 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.custom-header-container{
+    height: 100vh;
+    background-color:#F2F2F2;
+
+    /* flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.custom-header-container h1 {
+    font-size: 7em;
+    font-weight:bolder;
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+    .custom-header-container h1 {
+        font-size: 3em;
+        text-align: center;
+        font-weight:bolder;
+    }
+  }
+
+  .animations-section{
+    min-height: 100vh;
+    background-color: #F9F9F9;
+    overflow-x: hidden;
+  }
+
+  .animations-container.one{
+    padding-top: 10em;
+    min-height: 40vh;
+
+    /* flex */
+    display: flex;
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+
+  .animations-container div {
+    width: 50%;
+  }
+
+.img-right .image-container{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+
+    /* temp */
+    background-color: #F9F9F9;
+}
+
+.text-container h1{
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+
+.text-container h6{
+    padding-right: 5em;
+}
+
+/* .two{
+    background-color: teal;
+} */
+
+
+.animations-container.two{
+    padding-top: 10em;
+    min-height: 40vh;
+
+    /* flex */
+    display: flex;
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+
+.two-text{
+    text-align: right;
+}
+
+.two-text h6{
+    padding-left: 5em;
+    padding-right: 0;
+}
+
+/* Third */
+.animations-container.third{
+    padding-top: 5em;
+    min-height: 40vh;
+
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    /* gsap */
+    transform: translateY(-100vh);
+    opacity: 0;
+}
+
+.animations-container.fourth{
+    padding-top: 5em;
+    min-height: 40vh;
+
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    /* gsap */
+    transform: translateY(-100vh);
+    opacity: 0;
+}
+
+.conclusion{
+    background-color:#F9F9F9;
+    min-height: 50vh;
+
+    display: flex;
+    align-items: center;
+}
